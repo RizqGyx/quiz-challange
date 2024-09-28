@@ -36,6 +36,10 @@
 Description:
 This project is a fullstack web application for a quiz game, built using React with TypeScript for the frontend and Express for the backend. The backend features a simple structure with a single table called history, which records player performance and game statistics. The application allows users to participate in quizzes, track their scores, and view a leaderboard displaying top players based on their scores and the number of questions answered. The project utilizes PostgreSQL as the database and is structured as a monorepo, allowing for organized management of both frontend and backend code.
 
+## Database Structure
+
+![screenshot](./db-diagram.png)
+
 ## Setup
 
 ### Back-End
