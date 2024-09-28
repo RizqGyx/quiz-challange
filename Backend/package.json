@@ -1,0 +1,44 @@
+{
+  "name": "dot-quiz-challange-be",
+  "version": "1.0.0",
+  "description": "dot-quiz-challange-be",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db-create": "npx sequelize db:create",
+    "db-drop": "npx sequelize db:drop",
+    "db-migrate": "npx sequelize db:migrate",
+    "db-undo-migrate": "npx sequelize db:migrate:undo:all",
+    "db-seed": "npx sequelize db:seed:all",
+    "db-undo-seed": "npx sequelize db:seed:undo:all"
+  },
+  "keywords": [
+    "Quiz Game",
+    "DOT Indonesia",
+    "Express",
+    "Challange"
+  ],
+  "author": "Muhammad Rizki",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.1.0",
+    "pg": "^8.11.5",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.3",
+    "sequelize-cli": "^6.6.2",
+    "uuid": "^9.0.1"
+  },
+  "bin": {
+    "dot-quiz-challange-be": "bin/app.js"
+  },
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  }
+}

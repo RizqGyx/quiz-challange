@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrap-Hero {
+  background: linear-gradient(
+      150deg,
+      rgba(147, 189, 172, 0.9),
+      rgba(147, 189, 172, 0.1)
+    ),
+    url(/img_hero.jpg) no-repeat 100%;
+  background-size: cover;
+}
