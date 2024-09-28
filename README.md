@@ -1,5 +1,5 @@
 ﻿<h1 align="center">
-  <img src="./frontend/public/dot_indonesia_logo.jpg" alt="SkypassLogo" width="300"/>
+  <img src="./dot_indonesia_logo.jpg" alt="Dot Indonesia Logo" width="300"/>
   <br/>
   DOT Quiz Game [Frontend Challange]
 </h1>
