@@ -56,9 +56,13 @@ const HistoryPage: React.FC = () => {
         className="mb-4 p-2 border border-gray-300 rounded"
       />
       {loading ? (
-        <p>Loading...</p>
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
+          <p className="text-white text-4xl font-bold">Loading...</p>
+        </div>
       ) : error ? (
-        <p>{error}</p>
+        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-75 z-50">
+          <p className="text-white text-4xl font-bold">{error}</p>
+        </div>
       ) : (
         <table className="w-full text-left bg-white shadow-md rounded-lg">
           <thead>

@@ -39,3 +39,32 @@ export interface ApiResponse {
     results: Question[];
   };
 }
+
+export interface HeaderProps {
+  username: string;
+  onLogout: () => void;
+  timer?: number;
+  formatTimer?: (timer: number) => string;
+}
+
+export interface ScoreDetailsProps {
+  correctAnswer: number;
+  wrongAnswer: number;
+  notAnswered: number;
+  totalQuestions: number;
+}
+
+export interface AnswerListProps {
+  answers: string[];
+  onAnswer: (answer: string) => void;
+}
+
+export interface QuestionCounterProps {
+  currentQuestionIndex: number;
+  totalQuestions: number;
+}
+
+export interface StatisticsProps {
+  correctAnswersCount: number;
+  wrongAnswersCount: number;
+}
