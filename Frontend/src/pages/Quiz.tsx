@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import useFetch from "../hooks/useFetch";
 import { Question, ApiResponse } from "../lib/types";
+import { QUIZ_AMOUNT, QUIZ_DIFFICULTY } from "../lib/constants";
 import Header from "../components/Header";
 import QuestionCounter from "../components/QuizPage/QuestionCounter";
 import Statistics from "../components/QuizPage/Statistic";
@@ -29,14 +30,14 @@ const Quiz: React.FC = () => {
     parseInt(localStorage.getItem("wrongAnswersCount") || "0")
   );
   const [timer, setTimer] = useState<number>(() =>
-    parseInt(localStorage.getItem("timer") || "60")
+    parseInt(localStorage.getItem("timer") || "180")
   );
   const [shuffledAnswers, setShuffledAnswers] = useState<string[]>([]);
 
   const getQuestion = async () => {
     try {
       const response = (await fetchData(
-        `?amount=10&category=12&difficulty=easy`,
+        `?amount=${QUIZ_AMOUNT}&difficulty=${QUIZ_DIFFICULTY}`,
         "GET"
       )) as ApiResponse;
 
